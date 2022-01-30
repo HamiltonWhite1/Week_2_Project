@@ -15,6 +15,7 @@ while time_in_day < 24: # while the time in day is not hour 24
     if time_passed == 0:
         GARAGE.pay_for_parking()
         GARAGE.leave_garage()
+        GARAGE.ticket_paid()
         cars_in_garage.pop()
         time_passed = 15
     while inner_flag < 1: # while loop that runs once, then resets at the top of the body, to run again after prior code

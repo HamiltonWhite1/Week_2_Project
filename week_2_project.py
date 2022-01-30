@@ -40,6 +40,10 @@ class Parking_Garage:
                 if payment == 5:
                     self.customer_ticket["Paid"] = True
                     print("Thank you, have a nice day!")
+        self.customer_ticket["Paid"] = False
+    
+    def ticket_paid(self):
+        self.customer_ticket["Paid"] = False
             
             
 # Group Responsibilities
